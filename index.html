@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS TEST</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello Shu!</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam soluta, debitis modi iure aut, minima corrupti
+            repellat quis quas, maiores ipsam illum itaque officiis cum obcaecati at vero velit ullam.</p>
+    </header>
+    <main>
+        <h1>Hello there!</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab hic rem delectus ipsum maiores sit quidem vitae
+            aspernatur ex voluptatem?</p>
+    </main>
+</body>
+<div>
+    <input type="password" id="pw">
+    <input type="checkbox" onclick="myFun()" id="box">
+    <img src="/8173177.png" alt="" oncontextmenu="return false" width="15px" class="mata">
+</div>
+
+
+<script>
+    function myFun() {
+        let x = document.getElementById('pw')
+        if (x.type === "password") {
+            x.type = "text"
+        } else {
+            x.type = "password"
+        }
+    }
+    const input = document.getElementById('pw')
+    const eye = document.querySelector('div .mata')
+    const box = document.getElementById('box')
+
+    input.addEventListener('keyup' ,()=>{
+        console.log(input.value.length);
+        if(input.value.length >= 9){
+            input.value=""
+            alert('Password maximal 8 Kata')
+        }else{
+
+        }
+    })
+    box.addEventListener('click', () => {
+        if (box.checked) {
+            eye.src = "/images.png"
+        } else {
+            eye.src = "/8173177.png"
+        }
+    })
+</script>
+
+</html>

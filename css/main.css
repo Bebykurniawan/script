@@ -1,0 +1,23 @@
+#box {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  opacity: 0;
+  z-index: 99;
+} 
+div {
+
+  position: relative;
+
+}
+#pw {
+  width: 100px;
+
+}
+
+div img{
+  position: absolute;
+  top: 3px;
+  left: 80px;
+}
+
